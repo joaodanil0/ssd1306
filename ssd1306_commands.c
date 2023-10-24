@@ -6,7 +6,7 @@ void SSD1306_write(bool is_cmd, uint8_t hex, struct i2c_client *i2c_client){
     
     buf[0] = is_cmd == true ? SSD1306_CMD : SSD1306_DATA;
 
-    pr_info("CMD: %s:0x%x", is_cmd ? "True" : "False",is_cmd ? SSD1306_CMD : SSD1306_DATA);
+    // pr_info("CMD: %s:0x%x", is_cmd ? "True" : "False",is_cmd ? SSD1306_CMD : SSD1306_DATA);
     
     buf[1] = hex;
     

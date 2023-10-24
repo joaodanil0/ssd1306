@@ -45,3 +45,6 @@
 #define SSD1306_HW_CONF_REMAP_FLIPED    0xA1
 #define SSD1306_HW_CONF_COM_NORMAL      0xC0
 #define SSD1306_HW_CONF_COM_FLIPED      0xC8
+
+#define SSD1306_DISPLAY_ON              0xAF
+#define SSD1306_DISPLAY_OFF             0xAE

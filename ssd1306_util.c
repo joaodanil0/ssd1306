@@ -14,13 +14,13 @@ int SSD1306_DisplayInit(struct i2c_client *i2c_client)
 	msleep(100); // delay
 
 	pr_info("Display Init\n");
-	// SSD1306_command_turnon(0xAE, i2c_client);
+	// SSD1306_command_turnon(SSD1306_DISPLAY_OFF, i2c_client);
 	
 	SSD1306_command_mem_addr_mode(0x00, i2c_client);
     SSD1306_command_horizontal_flip(0xA1, i2c_client);
     SSD1306_command_vertical_flip(0xC8, i2c_client);
     SSD1306_command_charge_pump(0x14, i2c_client);
-    SSD1306_command_turnon(0xAF, i2c_client);
+    SSD1306_command_turnon(SSD1306_DISPLAY_ON, i2c_client);
 	// SSD1306_command_contrast(0x01, i2c_client);
     // SSD1306_command_entire_on(0xA4, i2c_client);
 	// SSD1306_command_inverse_disp(0xA6, i2c_client);

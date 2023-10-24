@@ -7,7 +7,7 @@ KERNELDIR = /home/joao/Documents/2.Linux/linux-mainline-6.1.25
 PWD := $(shell pwd)
 
 all:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules 
 
 clean:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
